@@ -213,4 +213,11 @@ h2 {
   .btn {
   width: 55%;
 }
+  .navbar {
+    font-size: 2rem;
+  }
+  
+  .story-text {
+    font-size: 2rem;
+  }
 }
