@@ -1,0 +1,209 @@
+/* Common Tags */
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #393e46;
+}
+a:hover {
+  color: #393e46;
+  /* text-decoration: underline; */
+}
+a:visited {
+  color: #393e46;
+}
+.container-fluid {
+  padding: 0;
+}
+
+h2 {
+  font-weight: 900;
+  color: #303841;
+}
+
+
+/* Header Section */
+
+.navbar {
+  padding: 0 3%;
+  margin-right: 0;
+  margin-left: 0;
+}
+.header-content {
+  background-image: url("../images/bg_header_pc.png");
+  color: #fdfdfd;
+}
+
+.header-background {
+  padding: 5% 0;
+  background-color: red;
+}
+
+.header-for {
+  margin-left: 25%;
+  font-weight: 900;
+  padding: 2% 0;
+}
+
+#header-link {
+  color: #fff;
+}
+
+/* Stories Section */
+
+#stories-section {
+  margin: 1% 25%;
+}
+
+.story-img {
+  width: 90%;
+  display: block;
+  margin: 3% auto;
+}
+
+.sidebar-section {
+  text-align: left;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.line-left {
+  border-left: 1px solid grey;
+}
+
+.line-right {
+  border-right: 1px solid grey;
+}
+
+.line-bottom {
+  width: 93%;
+  /* color: grey; */
+  margin-top: 3rem;
+  margin-bottom: 0;
+  margin-left: 5%;
+}
+
+.mainStory-header {
+ padding-left: 5%;
+ color: #303841;
+}
+
+.stories-header {
+ background-color: #0f4c75;
+ text-align: center;
+ padding: 1% 0;
+ margin: 5% 0;
+ color: #fdfdfd;
+ margin-left: 4%;
+}
+
+.col {
+
+}
+
+/* Footer Section */
+
+.footer-text {
+  text-align: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  background-color: #dbe2ef;
+  font-weight: 900;
+  color: #364547;
+}
+
+/* Stories Pages */
+
+/* Stories Section */
+
+.header {
+ margin: 5% 0;
+ text-align: center;
+}
+
+.button-div {
+  text-align: center;
+  padding: 2% 1%;
+  background-color: #dbe2ef;
+}
+
+.btn {
+  margin: 1% 2%;
+  width: 35%;
+}
+
+.story-text {
+  line-height: 2.5;
+  margin: 3% 0;
+  font-size: 1.2rem;
+}
+
+#storyAudio {
+  display: none;
+  margin: 0 auto;
+}
+
+#questionsAudio {
+  display: none;
+  margin: 0 auto;
+}
+
+/* Aside Bar */
+
+.preview-img {
+  width: 75%;
+  display: block;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1280px) {
+  #stories-section {
+    margin: 2% 10%;
+  }
+
+@media (max-width: 992px) {
+
+  #stories-section {
+    margin: 1% 2%;
+  }
+
+  .main-story {
+    padding-right: 0;
+  }
+
+  .list-translate li{
+    display: inline;
+    margin: 0 1.5%;
+    text-decoration: underline;
+  }
+
+  .line-left {
+    border: none;
+  }
+
+  .line-right {
+    border: none;
+  }
+
+  .sidebar-section {
+    text-align: center;
+  }
+
+  .story-img {
+    width: 100%;
+    display: block;
+    margin: 3% auto;
+  }
+}

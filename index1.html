@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Easy Stories</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <section id="header-section">
+
+    <div class="container-fluid">
+
+      <!-- Bootstrap Navigation Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Easy stories</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <h1 class="header-for">Easy stories in different lanquages</h1>
+      </div>
+
+
+
+  </section>
+
+
+  <section id="stories-section">
+
+      <div class="row">
+
+        <div class="col-lg-2 line-right">
+          <div class="sidebar-section">
+            <ul class="sidebar-list list-translate">
+              <a href="#" id="rus"><li>Russian version</li></a>
+              <a href="#" id="jpn"><li>Japanese version</li></a>
+              <a href="#" id="krn"><li>Korean version</li></a>
+              <a href="#" id="chn"><li>Chinese version</li></a>
+              <a href="#" id="eng"><li>English version</li></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+         <div class="main-story">
+           <h2 class="header">Murzik Petrovich</h2>
+           <img class="story-img" src="images/murzik.png" alt="simple cat painting">
+           <h2 id="story-header" class="header">Story</h2>
+
+           <div class="button-div">
+             <button class="btn btn-light" type="button" id="listen-story-button"><i class="fas fa-volume-up"></i> Listen</button>
+             <audio id="storyAudio" controls src="sounds/englishStory.mp3">
+
+             </audio>
+           </div>
+
+           <p class="story-text main-text">  Once upon time there lived a cat. His name was Murzik Petrovich.
+             He was not an ordinary cat but a grandnephew of the godfather cat.
+             He had a joyful, rich life by a compassionate old lady in one of Saint-Peterburg's yards.
+             She adopted him when he was a kitten. She brought him up in the best traditions of Saint-Peterburg's intellectuals.
+             That's why he never peed under a coach and never shrieked.
+             Very rarely he sweared in cat language with stray cats from the Godfather cat's clan.
+             And only not to be bullied as other usual house cats.</p>
+
+             <h2 id="questions-header" class="header">Questions and answers</h2>
+
+             <div class="button-div">
+               <button class="btn btn-light" type="button" id="listen-questions-button"><i class="fas fa-volume-up"></i> Listen</button>
+               <audio id="questionsAudio" controls src="sounds/english.mp3">
+             </div>
+
+             <p class="story-text questions-text">-Was there a cat?<br>
+             -Yes, there was a cat.<br>
+             -Was his name Murzik Petrovich?<br>
+             -Yes, his name was Murzik Petrovich.<br>
+             -Was he just an ordinary cat? No, he wasn't just an ordinary cat.<br>
+             -How was his life? His life was free and rich.<br>
+             -Where did he live? He lives with an old lady in one of Saint-Peterbug's yards.<br>
+             -Was he brought up well? Yes, he was brought up in the best traditions of Saint-Peterburg's intellectuals.</p>
+         </div>
+
+            <hr class="line-bottom">
+
+        </div>
+        <div class="col-lg-2 line-left">
+          <div class="sidebar-section">
+            <p>Recent stories</p>
+            <ul class="sidebar-list">
+              <a href="index1.html"><li>
+                <img class="preview-img" src="images/murzik.png" alt="simple cat painting">
+                Murzik Petrovich</li></a>
+              <!-- <a href="#"><li>Story2</li></a>
+              <a href="#"><li>Story3</li></a> -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section id="footer-section">
+    <footer>
+      <p class="footer-text">Copyright &#169; Easy Strories  2021</p>
+    </footer>
+
+  </section>
+</div>
+
+
+
+
+
+   <!-- Font Awesome Kit -->
+   <script src="https://kit.fontawesome.com/24fdb42cfd.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="script/index.js"></script>
+</body>
+
+</html>
