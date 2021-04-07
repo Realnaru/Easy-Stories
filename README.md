@@ -11,5 +11,7 @@ Contains:
  2. Audio version of each story
  
  3. Functional that allows to switch between different lanquages
+ 
+ published at https://realnaru.github.io/Easy-Stories/
 
 
