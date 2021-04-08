@@ -21,31 +21,31 @@ const chineseQuestions = "-从前，有着一只猫吗？<br> － 是的， -有
 
 document.querySelector("#rus").addEventListener("click", function(){
   changeStoryLanguage(russianStory, russianQuestions);
-  changePageLanguage("rus");
+  changeHeaders("История", "Вопросы и ответы");
   changeAudioSourse("russian");
 });
 
 document.querySelector("#eng").addEventListener("click", function(){
   changeStoryLanguage(englishStory, englishQuestions);
-  changePageLanguage("eng");
+  changeHeaders("Story", "Questions and answers");
   changeAudioSourse("english");
 });
 
 document.querySelector("#jpn").addEventListener("click", function(){
   changeStoryLanguage(japaneseStory, japaneseQuestions);
-  changePageLanguage("jpn");
+  changeHeaders("物語", "質問と回答");
   changeAudioSourse("japanese");
 });
 
 document.querySelector("#krn").addEventListener("click", function(){
   changeStoryLanguage(koreanStory, koreanQuestions);
-  changePageLanguage("krn");
+  changeHeaders("이야기", "질문과 답변");
   changeAudioSourse("korean");
 });
 
 document.querySelector("#chn").addEventListener("click", function(){
   changeStoryLanguage(chineseStory, chineseQuestions);
-  changePageLanguage("chn");
+  changeHeaders("故事", "问题和解答");
   changeAudioSourse("chinese");
 });
 
@@ -64,46 +64,9 @@ function changeStoryLanguage(story, questions) {
   document.querySelector(".questions-text").innerHTML = questions;
 }
 
-function changePageLanguage(language){
-
-  switch (language) {
-    case "rus":
-      document.querySelector("#story-header").innerText = "История";
-      document.querySelector("#questions-header").innerText = "Вопросы и ответы";
-      document.querySelector("#listen-story-button").innerHTML = '<i class="fas fa-volume-up"></i> Слушать';
-      document.querySelector("#listen-questions-button").innerHTML = '<i class="fas fa-volume-up"></i> Слушать';;
-      break;
-
-    case "eng":
-      document.querySelector("#story-header").innerText = "Story";
-      document.querySelector("#questions-header").innerText = "Questions and answers";
-      document.querySelector("#listen-story-button").innerHTML = '<i class="fas fa-volume-up"></i> Listen';
-      document.querySelector("#listen-questions-button").innerHTML = '<i class="fas fa-volume-up"></i> Listen';
-      break;
-
-    case "jpn":
-      document.querySelector("#story-header").innerText = "物語";
-      document.querySelector("#questions-header").innerText = "質問と回答";
-      document.querySelector("#listen-story-button").innerHTML = '<i class="fas fa-volume-up"></i> 聞く';
-      document.querySelector("#listen-questions-button").innerHTML = '<i class="fas fa-volume-up"></i> 聞く';
-      break;
-
-    case "krn":
-      document.querySelector("#story-header").innerText = "이야기";
-      document.querySelector("#questions-header").innerText = "질문과 답변";
-      document.querySelector("#listen-story-button").innerHTML = '<i class="fas fa-volume-up"></i> 듣다';
-      document.querySelector("#listen-questions-button").innerHTML = '<i class="fas fa-volume-up"></i> 듣다';
-      break;
-
-    case "chn":
-      document.querySelector("#story-header").innerText = "故事";
-      document.querySelector("#questions-header").innerText = "问题和解答";
-      document.querySelector("#listen-story-button").innerHTML = '<i class="fas fa-volume-up"></i> 听';
-      document.querySelector("#listen-questions-button").innerHTML = '<i class="fas fa-volume-up"></i> 听';
-        break;
-    default:
-
-  }
+function changeHeaders(headerOne, headerTwo){
+  document.querySelector("#story-header").innerText = headerOne;
+  document.querySelector("#questions-header").innerText = headerTwo;
 }
 
 function showHide(elementId){
