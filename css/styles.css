@@ -116,6 +116,7 @@ h2 {
 
 .volume-icon:hover {
   color: #112d4e;
+  cursor: pointer;
 }
 
 /* Footer Section */
