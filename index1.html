@@ -60,11 +60,11 @@
         <div class="col-lg-2 line-right">
           <div class="sidebar-section">
             <ul class="sidebar-list list-translate">
-              <a href="#" id="rus"><li>Russian version</li></a>
-              <a href="#" id="jpn"><li>Japanese version</li></a>
-              <a href="#" id="krn"><li>Korean version</li></a>
-              <a href="#" id="chn"><li>Chinese version</li></a>
-              <a href="#" id="eng"><li>English version</li></a>
+              <a href="#" id="rus"><li><img class="lang-img"src="images/rus_flag.jpg" alt="">Русский</li></a>
+              <a href="#" id="jpn"><li><img class="lang-img"src="images/jpn_flag.png" alt="">日本語</li></a>
+              <a href="#" id="krn"><li><img class="lang-img"src="images/krn_flag.jpg" alt="">한국어</li></a>
+              <a href="#" id="chn"><li><img class="lang-img"src="images/chn_flag.jpg" alt="">中国人</li></a>
+              <a href="#" id="eng"><li><img class="lang-img"src="images/eng_flag.jpg" alt="">English</li></a>
             </ul>
           </div>
         </div>
@@ -73,10 +73,11 @@
          <div class="main-story">
            <h2 class="header">Murzik Petrovich</h2>
            <img class="story-img" src="images/murzik.png" alt="simple cat painting">
-           <h2 id="story-header" class="header">Story</h2>
+
 
            <div class="button-div">
-             <button class="btn btn-light" type="button" id="listen-story-button"><i class="fas fa-volume-up"></i> Listen</button>
+             <h2 id="story-header" class="header">Story</h2>
+             <i id="listen-story-button" class="volume-icon fas fa-volume-up fa-2x"></i>
              <audio id="storyAudio" controls src="sounds/englishStory.mp3">
 
              </audio>
@@ -93,7 +94,7 @@
              <h2 id="questions-header" class="header">Questions and answers</h2>
 
              <div class="button-div">
-               <button class="btn btn-light" type="button" id="listen-questions-button"><i class="fas fa-volume-up"></i> Listen</button>
+               <i id="listen-questions-button" class="volume-icon fas fa-volume-up fa-2x"></i>
                <audio id="questionsAudio" controls src="sounds/english.mp3">
              </div>
 
@@ -114,9 +115,10 @@
           <div class="sidebar-section">
             <p>Recent stories</p>
             <ul class="sidebar-list">
-              <a href="index1.html"><li>
+              <a href="index1.html">
+                <li>
                 <img class="preview-img" src="images/murzik.png" alt="simple cat painting">
-                Murzik Petrovich</li></a>
+                </li></a>
               <!-- <a href="#"><li>Story2</li></a>
               <a href="#"><li>Story3</li></a> -->
             </ul>
