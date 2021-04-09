@@ -1,6 +1,7 @@
 # Easy-Stories
 Simple project for foreign language practice. 
 Contains: 
+
 1.Texts of stories, questions and answers in defferent languages:
    -english
    -russian
