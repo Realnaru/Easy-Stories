@@ -19,60 +19,70 @@ const chineseStory = "从前有一只公猫，它的名字是穆尔济可彼得�
 
 const chineseQuestions = "-从前，有着一只猫吗？<br> － 是的， -有着一只猫。<br> -它的名字是穆尔济可·彼得洛维奇（Mùěrjìkě ·Bǐdéluòwéiqí）吗？<br> -是的，它名字是穆尔济可·彼得洛维奇（Mùěrjìkě ·Bǐdéluòwéiqí<br> 它是普通一只猫吗?<br> 不是，它不是普通<br> 它是一只普通的猫吗？<br> 不，他不只是普通的猫。<br> 它的生活怎么样？<br> -它的生活又自由又富有。<br> 它住在哪里？<br> 它和老太太住在圣彼得堡的一个院子里。 它是有的猫吗？<br> -是的，她以最良好的圣彼得堡传统养育了这只小猫";
 
+//ckicking element with id="rus" changes text of story and questions to russian, as well as changing audio source
 document.querySelector("#rus").addEventListener("click", function(){
   changeStoryLanguage(russianStory, russianQuestions);
   changeHeaders("История", "Вопросы и ответы");
   changeAudioSourse("russian");
 });
 
+//ckicking element with id="eng" changes text of story and questions to english, as well as changing audio source
 document.querySelector("#eng").addEventListener("click", function(){
   changeStoryLanguage(englishStory, englishQuestions);
   changeHeaders("Story", "Questions and answers");
   changeAudioSourse("english");
 });
 
+//ckicking element with id="jpn" changes text of story and questions to japanese, as well as changing audio source
 document.querySelector("#jpn").addEventListener("click", function(){
   changeStoryLanguage(japaneseStory, japaneseQuestions);
   changeHeaders("物語", "質問と回答");
   changeAudioSourse("japanese");
 });
 
+//ckicking element with id="krn" changes text of story and questions to korean, as well as changing audio source
 document.querySelector("#krn").addEventListener("click", function(){
   changeStoryLanguage(koreanStory, koreanQuestions);
   changeHeaders("이야기", "질문과 답변");
   changeAudioSourse("korean");
 });
 
+//ckicking element with id="chn" changes text of story and questions to chinese, as well as changing audio source
 document.querySelector("#chn").addEventListener("click", function(){
   changeStoryLanguage(chineseStory, chineseQuestions);
   changeHeaders("故事", "问题和解答");
   changeAudioSourse("chinese");
 });
 
+//show or hide audio element for story then clicking elemnt with id="listen-story-button"
 document.querySelector("#listen-story-button").addEventListener("click", function(){
   showHide("#storyAudio");
 });
 
+//show or hide audio element for questions then clicking elemnt with id="listen-story-button"
 document.querySelector("#listen-questions-button").addEventListener("click", function(){
   showHide("#questionsAudio");
 });
 
 
-
+//change text of the story and questions
 function changeStoryLanguage(story, questions) {
   document.querySelector(".main-text").innerText = story;
   document.querySelector(".questions-text").innerHTML = questions;
 }
 
+//change text of story and questions headers to given strings
 function changeHeaders(headerOne, headerTwo){
   document.querySelector("#story-header").innerText = headerOne;
   document.querySelector("#questions-header").innerText = headerTwo;
 }
 
+//show or hide element with *elementId* by changing it's display property
 function showHide(elementId){
   document.querySelector(elementId).style.display = (document.querySelector(elementId).style.display === "block") ? "none": "block";
 }
 
+//change audio source for audion elements for story and questions
 function changeAudioSourse(language) {
   document.querySelector("#storyAudio").setAttribute("src", "sounds/" + language + "Story.mp3");
   document.querySelector("#questionsAudio").setAttribute("src", "sounds/" + language + "Questions.mp3");
